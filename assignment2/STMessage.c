@@ -7,3 +7,10 @@
 //
 
 #include "STMessage.h"
+
+STMessage STMessageInit(char *src, int sender) {
+    STMessage message;
+    message.src = src;
+    message.sender = sender;
+    return message;
+}
